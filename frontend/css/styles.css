@@ -1,0 +1,9 @@
+.homepage-size {
+    width: 600px;
+    height: 400px;
+}
+
+/*Make text with links to other pages slightly bigger and stand out*/
+a {
+    font-size: 22px;
+}
