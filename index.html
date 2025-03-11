@@ -9,24 +9,33 @@
 </head>
 
 <body>
-<div class="header">
-    <h1>Essay and Art</h1>
-
-    <div class="account-stuff">
-        <!-- make Sign In / Sign Up button at top right? -->
-        <a href="frontend/pages/signin.html" class="btn-sign-in">Sign In</a>
-        <a href="frontend/pages/signup.html" class="btn-sign-up">Sign Up</a>
+    <div class="menu-items" id="items" style="display: none">
+        <button onclick="close_sidebar()">Close</button>
+        <div class="page-links">
+            <a href="frontend/pages/essay.html" target=_self> Essay</a>
+            <a href="frontend/pages/art.html" target=_self> Artwork</a>
+        </div>
     </div>
-</div>
 
-<hr> <!-- Horizontal line -->
+    <div class="homepage">
+        <div class="menu-button">
+            <button id="menu" onclick="open_sidebar()">&#9776;</button>
+        </div>
 
-<img src="frontend/images/Voyager.png" alt="Picture of voyage" class="homepage-size">
+        <h1>Essay and Art</h1>
 
-<div class="page-links">
-    <p><a href="frontend/pages/essay.html" target=_self> Essay</a></p>
-    <p><a href="frontend/pages/art.html" target=_self> Artwork</a></p>
-</div>
+        <div class="account-stuff">
+            <!-- make Sign In / Sign Up button at top right? -->
+            <a href="frontend/pages/signin.html" class="btn-sign-in">Sign In</a>
+            <a href="frontend/pages/signup.html" class="btn-sign-up">Sign Up</a>
+        </div>
+    </div>
+
+    <hr> <!-- Horizontal line -->
+
+    <img src="frontend/images/Voyager.png" alt="Picture of voyage" class="homepage-size">
+
+    <script src="frontend/js/script.js"></script>
 </body>
 
 </html>

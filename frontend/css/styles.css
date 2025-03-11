@@ -3,7 +3,8 @@
     height: 400px;
 }
 
-.header {
+.homepage {
+    width: 100%;
     display: flex;
     justify-content: space-between; /* Pushes elements to opposite sides */
     align-items: center; /* Aligns items vertically */
@@ -41,4 +42,42 @@
 /*Make text with links to other pages slightly bigger and stand out*/
 .page-links {
     font-size: 22px;
+}
+
+/* W3 CSS Credits: */
+
+.menu-button button{
+    font-size: 28px;
+    display: inline-block;
+    border: none;
+    padding: 4px 8px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.menu-button button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Change background on hover */
+    border-radius: 12px; /* Optional: Add rounded corners */
+}
+
+.menu-items {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items button,
+.menu-items a {
+    display: block;
 }
